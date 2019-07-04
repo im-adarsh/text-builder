@@ -3,8 +3,13 @@ This mini util takes in the text template, replace the text template with variab
 
 Usage : 
 
+```$xslt
+str := txtBuilder.NewTextBuilder().Template("hello %v").Params([]string{"world"}).GetText()
+fmt.Println(str)
 ```
-	str := txtBuilder.NewTextBuilder().Template("hello %v").Params([]string{"world"}).GetText()
-	fmt.Println(str)
+
+Output : 
+```$xslt
+hello world
 ```
 
